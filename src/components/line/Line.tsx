@@ -1,7 +1,6 @@
 import line from '../../assets/images/icons/line.png'
-type Props = {}
 
-const Line = (props: Props) => {
+const Line = () => {
   return (
     <div className='flex w-full py-2'>
         <img src={line} alt="" />

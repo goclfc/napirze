@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Line from "../line/Line";
 import activeCircle from "../../assets/images/icons/circleActive.png";
 import paciveCircle from "../../assets/images/icons/circlePasive.png";
@@ -15,7 +14,7 @@ const PaymentMethod = (props: Props) => {
     <div className="p-4 border border-black rounded-md">
       <div className="name font-smooch-bold">Payment method</div>
       <div
-        className="item flex gap-2 font-smooch-bold text-xl items-center"
+        className="item flex gap-2 font-smooch-bold text-xl items-center cursor-pointer"
         onClick={() => props.setSelectedCurrency("Usd")}
       >
         <img
@@ -26,7 +25,7 @@ const PaymentMethod = (props: Props) => {
       </div>
       <Line />
       <div
-        className="item flex gap-2 font-smooch-bold text-xl items-center"
+        className="item flex gap-2 font-smooch-bold text-xl items-center cursor-pointer"
         onClick={() => props.setSelectedCurrency("Gel")}
       >
         <img src={props.selectedCurrency === "Gel" ? activeCircle : paciveCircle} alt="" />{" "}

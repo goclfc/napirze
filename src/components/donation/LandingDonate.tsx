@@ -18,7 +18,7 @@ const LandingDonate = () => {
         on the floodplain Your support makes a big difference.
       </p>
       <DonationAmount setAmount={setAmount} setSelectedCurrency={setSelectedCurrency} selectedCurrency={selectedCurrency} amount={amount}/>
-      <div className="my-6 flex gap-2">
+      <div className="my-6 flex gap-2 justify-center">
         <div className="payButton cursor-pointer">
           <img src={payWithPaypal} alt="" />
         </div>

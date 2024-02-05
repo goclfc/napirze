@@ -10,10 +10,9 @@ import {
   redirectToPaymantPage,
 } from "../../payments/requests";
 
-const DonationCard = () => {
+const DonationCard = ({setLoading}:any) => {
   const [amount, setAmount] = useState<number>(0);
   const [selectedCurrency, setSelectedCurrency] = useState<string>("Gel");
-  const [loading, setLoading] = useState(false);
   const handleClick = () => {
     setLoading(true);
     initBogPayment(amount, "GEL").then((response) => {
@@ -23,7 +22,6 @@ const DonationCard = () => {
   };
   const handlePaypalClick = () => {
     setLoading(true);
-
     initPaypalPayment(amount).then((response) => {
       redirectToPaymantPage(response.links[1].href);
       setLoading(false);

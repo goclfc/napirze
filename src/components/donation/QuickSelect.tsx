@@ -13,7 +13,7 @@ const Item = (props: ItemProps) => {
     Usd: "$",
   };
   return (
-    <div className="bg-napirzeGreen text-white rounded-xl flex justify-center items-center px-4" onClick={()=>props.setAmount(props.amount)}>
+    <div className="bg-napirzeGreen text-white rounded-xl flex justify-center items-center px-4 cursor-pointer" onClick={()=>props.setAmount(props.amount)}>
       {props.amount} {currencies[props.currency]}
     </div>
   );

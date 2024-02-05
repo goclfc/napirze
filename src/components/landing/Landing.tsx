@@ -9,14 +9,25 @@ import logopart from "../../assets/images/logo/logopart.png";
 import NapirzeFloodplain from "../sections/NapirzeFloodplain";
 import LandingDonate from "../donation/LandingDonate";
 import Footer from "../footer/Footer";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Landing = () => {
   const [loading, setLoading] = useState(true);
+  const location = useLocation()
+  const navigate = useNavigate()
+  useEffect(()=>{
+    if(location.search==="?success=fail"){
+      navigate('fail')
+    }else if(location.search === "?success=true"){
+      navigate("success")
+    }
+  },[location])
+  console.log(location.search)
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3000);
-  });
+  },[]);
   return (
     <div className="w-full h-full">
       <Loading isLoading={loading} />
@@ -40,7 +51,7 @@ const Landing = () => {
       </div>
       <NapirzeFloodplain />
       <LandingDonate />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import imgNature from '../../assets/images/content/nature1.png'
-type Props = {}
 
-const NapirzeFloodplain = (props: Props) => {
+const NapirzeFloodplain = () => {
   return (
         <div className="w-full bg-white p-2">
           <div className="images flex justify-center gap-4 pt-10">
