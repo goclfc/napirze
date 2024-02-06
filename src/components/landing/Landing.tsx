@@ -18,7 +18,7 @@ const Landing = () => {
   useEffect(()=>{
     if(location.search==="?success=fail"){
       navigate('fail')
-    }else if(location.search === "?success=true"){
+    }else if(location.search === "?success=true" || location.search === "?success=1"){
       navigate("success")
     }
   },[location])
@@ -50,7 +50,7 @@ const Landing = () => {
         </p>
       </div>
       <NapirzeFloodplain />
-      <LandingDonate />
+      <LandingDonate setLoading={setLoading}/>
       <Footer />
     </div>
   );

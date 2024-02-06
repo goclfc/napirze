@@ -31,8 +31,7 @@ const DonationCard = ({setLoading}:any) => {
     <div className="bg-white rounded-md drop-shadow-2xl mt-4 max-w-[659px] p-4 ml-0 lg:ml-6 ">
       <div className="header">
         <h2 className=" font-smooch-bold font-semibold text-2xl text-napirzeDark text-center">
-          With every donation contributing to a project set to rewild the heart
-          of our industrial city and revitalise the floodplain Rustavi
+        Your support makes huge difference.Our goal is to raise ₾10,000 ($3,700), which will cover the costs of: - Buying and transporting secondhand timber - Working with biologists to identify the key species living on the floodplain - Illustration, design, and printing of the boards - Installing the information boards on the floodplain
         </h2>
       </div>
       <div className="actions max-w-[440px] mx-auto">

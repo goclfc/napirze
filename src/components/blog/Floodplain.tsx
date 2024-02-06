@@ -43,7 +43,7 @@ const Floodplain = () => {
         <BlogImg img={img6} />
         <BlogText text={text8} />
         <BlogText text={text9} />
-        <BlogFooter nextUrl='../blog/commoning' prevUrl="../blog/napirze" />
+        <BlogFooter nextUrl='../blog/napirze' prevUrl="../blog/commoning" />
       </div>
       <Footer activeItem="blog" />
     </div>

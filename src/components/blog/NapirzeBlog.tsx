@@ -11,8 +11,9 @@ import img3 from "../../assets/images/content/napirze_story_3.jpeg";
 import img4 from "../../assets/images/content/napirze_story_4.jpeg";
 import img5 from "../../assets/images/content/napirze_story_5.jpeg";
 import img6 from "../../assets/images/content/napirze_story_6.jpeg";
-import img7 from "../../assets/images/content/napirze_story_7.jpeg";
-import img8 from "../../assets/images/content/napirze_story_8.jpeg";
+import img7 from "../../assets/images/content/napirze_story_8.jpeg";
+import img8 from "../../assets/images/content/napirze_story_7.jpeg";
+import { redirectToPaymantPage } from "../../payments/requests";
 
 const NapirzeBlog = () => {
   const text1 = `NAPIRZE in Georgian means "on the bank of the river"`;
@@ -59,6 +60,7 @@ const NapirzeBlog = () => {
         <BlogImg img={img8} />
         <BlogText text={text12} />
         <BlogText text={text13} />
+        <p className="text-blue-500 font-smooch-bold w-full md:w-1/2 mx-auto py-2 px-1 cursor-pointer">[1] Britanica - <span onClick={()=>redirectToPaymantPage("https://www.britannica.com/place/Caucasus")}>https://www.britannica.com/place/Caucasus</span></p>
         <BlogFooter nextUrl="../blog/floodplain" prevUrl="../blog/commoning" />
       </div>
       <Footer activeItem="blog" />

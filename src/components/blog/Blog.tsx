@@ -9,22 +9,22 @@ const Blog = () => {
   return (
     <div>
       <Header transparent={false} activeItem="blog" />
-      <div className="mt-16 w-full flex p-2 flex-wrap">
-        <div className="w-full md:w-1/2 p-2">
-          <BlogItem
-            img={floodplain}
-            description="HISTORY OF RUSTAVI FLOODPLAIN"
-            link="floodplain"
-          />
-        </div>
-        <div className="w-full md:w-1/2 p-2">
+      <div className="mt-16 w-full flex p-0 lg:p-2 flex-wrap">
+        <div className="w-full md:w-1/2 p-0 lg:p-2">
           <BlogItem
             img={napirze}
             description="NAPIRZE"
             link="napirze"
           />
         </div>
-        <div className="w-full md:w-1/2 p-2">
+        <div className="w-full md:w-1/2 p-0 lg:p-2">
+          <BlogItem
+            img={floodplain}
+            description="HISTORY OF RUSTAVI FLOODPLAIN"
+            link="floodplain"
+          />
+        </div>
+        <div className="w-full md:w-1/2  p-0 lg:p-2">
           <BlogItem
             img={commoning}
             description="COMMONING"
