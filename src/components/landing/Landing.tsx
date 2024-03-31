@@ -10,7 +10,7 @@ import NapirzeFloodplain from "../sections/NapirzeFloodplain";
 import LandingDonate from "../donation/LandingDonate";
 import Footer from "../footer/Footer";
 import { useLocation, useNavigate } from "react-router-dom";
-
+import logoText from '../../assets/images/logo/logoText.png'
 const Landing = () => {
   const [loading, setLoading] = useState(true);
   const location = useLocation()
@@ -22,7 +22,6 @@ const Landing = () => {
       navigate("success")
     }
   },[location])
-  console.log(location.search)
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -37,17 +36,20 @@ const Landing = () => {
       <div className="flex w-full h-auto">
         <img src={floodplain} alt="" className="w-full h-auto" />
       </div>
-      <div className="flex w-full bg-napirzeDark justify-center items-center gap-4 p-6">
+      <div className="flex w-full bg-napirzeDark justify-center items-center gap-4 p-6 sm:hidden ">
         <div className="w-40">
           <img src={logopart} alt="" className="w-full h-auto" />
         </div>
-        <p className="text-white font-smooch-bold w-60 sm:w-96 xl:w-[600px] text-xl">
+        <p className="text-white font-smooch-bold w-60 text-xl">
           One of our most cherished aspirations is to bring otters (Lutra lutra
           meridionalis) back to Rustavi. They are native to this region, but
           have disappeared due to widespread habitat destruction. Their presence
           will serve as an indicator of our success and demonstrate a huge
           ecological achievement.
         </p>
+      </div>
+      <div className="hidden sm:block">
+        <img src={logoText} />
       </div>
       <NapirzeFloodplain />
       <LandingDonate setLoading={setLoading}/>

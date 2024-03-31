@@ -9,8 +9,9 @@ import {
   initPaypalPayment,
   redirectToPaymantPage,
 } from "../../payments/requests";
+import DonationHeader from "./DonationHeader";
 
-const DonationCard = ({setLoading}:any) => {
+const DonationCard = ({ setLoading }: any) => {
   const [amount, setAmount] = useState<number>(0);
   const [selectedCurrency, setSelectedCurrency] = useState<string>("Gel");
   const handleClick = () => {
@@ -30,9 +31,7 @@ const DonationCard = ({setLoading}:any) => {
   return (
     <div className="bg-white rounded-md drop-shadow-2xl mt-4 max-w-[659px] p-4 ml-0 lg:ml-6 ">
       <div className="header">
-        <h2 className=" font-smooch-bold font-semibold text-2xl text-napirzeDark text-center">
-        Your support makes huge difference.Our goal is to raise ₾10,000 ($3,700), which will cover the costs of: - Buying and transporting secondhand timber - Working with biologists to identify the key species living on the floodplain - Illustration, design, and printing of the boards - Installing the information boards on the floodplain
-        </h2>
+        <DonationHeader />
       </div>
       <div className="actions max-w-[440px] mx-auto">
         <DonationAmount
