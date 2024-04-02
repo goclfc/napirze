@@ -5,7 +5,7 @@ import Video from "../video/Video";
 import { useEffect, useState } from "react";
 import NapirzeRiverbank from "../sections/NapirzeRiverbank";
 import floodplain from "../../assets/images/content/floodplain1.png";
-import logopart from "../../assets/images/logo/logopart.png";
+import logoFull from '../../assets/images/logo/logoFull.png'
 import NapirzeFloodplain from "../sections/NapirzeFloodplain";
 import LandingDonate from "../donation/LandingDonate";
 import Footer from "../footer/Footer";
@@ -36,11 +36,11 @@ const Landing = () => {
       <div className="flex w-full h-auto">
         <img src={floodplain} alt="" className="w-full h-auto" />
       </div>
-      <div className="flex w-full bg-napirzeDark justify-center items-center gap-4 p-6 sm:hidden ">
+      <div className="flex w-full bg-napirzeDark flex-col justify-center items-center gap-4 p-6 sm:hidden ">
         <div className="w-40">
-          <img src={logopart} alt="" className="w-full h-auto" />
+          <img src={logoFull} alt="" className="w-full h-auto" />
         </div>
-        <p className="text-white font-smooch-bold w-60 text-xl">
+        <p className="text-white font-smooch-bold text-xl text-justify">
           One of our most cherished aspirations is to bring otters (Lutra lutra
           meridionalis) back to Rustavi. They are native to this region, but
           have disappeared due to widespread habitat destruction. Their presence
