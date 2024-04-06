@@ -16,8 +16,7 @@ const DonationHeader = () => {
           </li>
           <li>• Illustration, design, and printing of the boards</li>
           <li>
-            • Installing the information boards on the floodplain Your support
-            makes a big difference.
+            • Installing the information boards on the floodplain
           </li>
         </ul>
         <h2 className="font-smooch-bold font-bold w-full mx-auto text-xl sm:text-2xl text-center">
