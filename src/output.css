@@ -704,10 +704,6 @@ video {
   width: 10rem;
 }
 
-.w-60 {
-  width: 15rem;
-}
-
 .w-\[31\%\] {
   width: 31%;
 }
@@ -917,6 +913,11 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-8 {

@@ -27,7 +27,7 @@ const NapirzeRiverbank = () => {
           centered on the banks of the Mtkvari river in Rustavi, Georgia. While
           our primary aim is to rewild an abandoned site in the heart of our
           industrial city, we also aim to create a cultural shift all along a
-          river whose waters connect three countries and thousands of people in
+          river whose waters connect five countries and thousands of people in
           and around the Caucasus Mountains.
         </p>
       </div>

@@ -2,7 +2,7 @@ import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import BlogItem from "./BlogItem";
 import floodplain from "../../assets/images/content/floodplain-1943.jpg";
-import napirze from '../../assets/images/content/napirze_2-cf22cbf2.jpeg'
+import napirze from '../../assets/images/content/napirze_2-cf22cbf2.jpg'
 import commoning from '../../assets/images/content/garage_1-6b43ea43.jpeg'
 
 const Blog = () => {
