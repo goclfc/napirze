@@ -3,12 +3,10 @@ import Landing from "./components/landing/Landing";
 import Donation from "./components/donation/Donation";
 import AboutUs from "./components/aboutUs/AboutUs";
 import Blog from "./components/blog/Blog";
-import Floodplain from "./components/blog/Floodplain";
-import NapirzeBlog from "./components/blog/NapirzeBlog";
 import Contact from "./components/contact/Contact";
-import Commoning from "./components/blog/Commoning";
 import Fail from "./components/success/Fail";
 import Success from "./components/success/Success";
+import Admin from "./components/admin/Admin";
 
 function App() {
   return (
@@ -21,9 +19,9 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="fail" element={<Fail />} />
         <Route path="success" element={<Success />} />
-        <Route path="blog/floodplain" element={<Floodplain />} />
-        <Route path="blog/napirze" element={<NapirzeBlog />} />
-        <Route path="blog/commoning" element={<Commoning />} />
+        <Route path="blog/:id" element={<Admin />} />
+        <Route path="admin" element={<Admin />} />
+      
       </Routes>
     </BrowserRouter>
   );

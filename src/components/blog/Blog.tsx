@@ -1,36 +1,35 @@
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import BlogItem from "./BlogItem";
-import floodplain from "../../assets/images/content/floodplain-1943.jpg";
-import napirze from '../../assets/images/content/napirze_2-cf22cbf2.jpg'
-import commoning from '../../assets/images/content/garage_1-6b43ea43.jpeg'
+import { useEffect, useState } from "react";
+import { getPosts } from "../../payments/requests";
 
+export type blogs_type = {
+  id: number;
+  main_title: string;
+  title: string;
+  min_read: number;
+  image: {
+    id: number;
+    name: string;
+  };
+};
 const Blog = () => {
+  const [blogs, setBlogs] = useState<blogs_type[]>([]);
+  useEffect(()=>{
+    getPosts(setBlogs)
+  },[]) 
+  console.log(blogs,'blogs')
   return (
     <div>
       <Header transparent={false} activeItem="blog" />
       <div className="mt-16 w-full flex p-0 lg:p-2 flex-wrap">
+        {blogs?.length > 0 && blogs?.map(blog => (
+
         <div className="w-full md:w-1/2 p-0 lg:p-2">
-          <BlogItem
-            img={napirze}
-            description="NAPIRZE"
-            link="napirze"
-          />
+          <BlogItem img={blog.image.name} description={blog.main_title} link={blog.id.toString()} />
         </div>
-        <div className="w-full md:w-1/2 p-0 lg:p-2">
-          <BlogItem
-            img={floodplain}
-            description="HISTORY OF RUSTAVI FLOODPLAIN"
-            link="floodplain"
-          />
-        </div>
-        <div className="w-full md:w-1/2  p-0 lg:p-2">
-          <BlogItem
-            img={commoning}
-            description="COMMONING"
-            link="../blog"
-          />
-        </div>
+        ))}
       </div>
       <Footer activeItem="blog" />
     </div>
