@@ -1,8 +1,8 @@
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import cover from "../../assets/images/content/aboutUsCover.png";
-import aboutUs1 from "../../assets/images/content/aboutUs1.png";
-import aboutUs2 from "../../assets/images/content/aboutUs2.png";
+import aboutUs1 from "../../assets/images/content/left.jpg";
+import aboutUs2 from "../../assets/images/content/right.jpg";
 import aboutUs3 from "../../assets/images/content/aboutUs3.png";
 import { redirectToPaymantPage } from "../../payments/requests";
 

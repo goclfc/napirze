@@ -20,7 +20,6 @@ function App() {
         <Route path="fail" element={<Fail />} />
         <Route path="success" element={<Success />} />
         <Route path="blog/:id" element={<Admin />} />
-        <Route path="admin" element={<Admin />} />
       
       </Routes>
     </BrowserRouter>

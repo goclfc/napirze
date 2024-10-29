@@ -7,7 +7,6 @@ import NapirzeRiverbank from "../sections/NapirzeRiverbank";
 import floodplain from "../../assets/images/content/floodplain1.png";
 import logoFull from '../../assets/images/logo/logoFull.png'
 import NapirzeFloodplain from "../sections/NapirzeFloodplain";
-import LandingDonate from "../donation/LandingDonate";
 import Footer from "../footer/Footer";
 import { useLocation, useNavigate } from "react-router-dom";
 import logoText from '../../assets/images/logo/logoText.png'
@@ -52,7 +51,7 @@ const Landing = () => {
         <img src={logoText} />
       </div>
       <NapirzeFloodplain />
-      <LandingDonate setLoading={setLoading}/>
+      {/* <LandingDonate setLoading={setLoading}/> */}
       <Footer />
     </div>
   );

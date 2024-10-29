@@ -1,6 +1,5 @@
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
-import BlogFooter from "./BlogFooter";
 import BlogHeader from "./BlogHeader";
 import BlogImg from "./BlogImg";
 import BlogName from "./BlogName";
@@ -34,7 +33,7 @@ const NapirzeBlog = () => {
       <Header transparent={false} activeItem="blog" />
       <div className="mt-16 w-full">
         <BlogHeader
-          link="../blog/floodplain"
+          link={2}
           author="DEME GORGADZE"
           minRead={6}
         />
@@ -61,7 +60,7 @@ const NapirzeBlog = () => {
         <BlogText text={text12} />
         <BlogText text={text13} />
         <p className="text-blue-500 font-smooch-bold w-full md:w-1/2 mx-auto py-2 px-1 cursor-pointer">[1] Britanica - <span onClick={()=>redirectToPaymantPage("https://www.britannica.com/place/Caucasus")}>https://www.britannica.com/place/Caucasus</span></p>
-        <BlogFooter nextUrl="../blog/floodplain" prevUrl="../blog/commoning" />
+        {/* <BlogFooter nextUrl="../blog/floodplain" prevUrl="../blog/commoning" /> */}
       </div>
       <Footer activeItem="blog" />
     </div>

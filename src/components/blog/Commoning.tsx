@@ -5,7 +5,6 @@ import BlogImg from "./BlogImg";
 import arrowLeft from "../../assets/images/icons/Line arrow-left.png";
 
 import { Link } from "react-router-dom";
-import BlogFooter from "./BlogFooter";
 const Commoning = () => {
   return (
     <div>
@@ -23,7 +22,7 @@ const Commoning = () => {
           </Link>
         </div>
         <BlogImg img={img} />
-        <BlogFooter nextUrl="../blog/napirze" prevUrl="../blog/floodplain" />
+        {/* <BlogFooter nextUrl="../blog/napirze" prevUrl="../blog/floodplain" /> */}
       </div>
       <Footer activeItem="blog" />
     </div>

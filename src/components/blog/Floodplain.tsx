@@ -1,6 +1,5 @@
 import Footer from '../footer/Footer'
 import Header from '../header/Header'
-import BlogHeader from './BlogHeader'
 import BlogName from './BlogName'
 import BlogText from './BlogText'
 import img1 from '../../assets/images/content/1943_fld.jpg'
@@ -10,7 +9,6 @@ import img4 from '../../assets/images/content/1970_fl.jpg'
 import img5 from '../../assets/images/content/2009_fl.jpg'
 import img6 from '../../assets/images/content/present_fl.jpg'
 import BlogImg from './BlogImg'
-import BlogFooter from './BlogFooter'
 
 const Floodplain = () => {
     const text1 = "Beginning as a major Iberian political hub, Rustavi has long been a city strategically situated on the edge of the Mtkvari River. During the Soviet period, Rustavi grew into a booming city driven by Rustavi Metalurgical industry. As the city was planned, the Mtkvari was engaged as a critical resource: it could be drawn into the city for cooling the machines of the metallurgical plant and harnessed as a source of hydropower. The floodplain’s forest provided a source of clean air to be fed into the city along its grand boulevards and parks. During the socioeconomic chaos of the 1990s, the floodplain provided the means of survival for many residents - namely through deforestation by residents and their families for fuel and heat. Since this period, the floodplain has not recovered its status as an essential urban resource but is instead seen by residents as a wasteland in the middle of the city – a constant reminder of demise and a difficult past. Today, the floodplain has been reduced to a space for dumping waste, though it is occasionally used by a few residents for fishing and grazing. Despite its public status as a wasteland, some Georgians see the potential of these ecological remnants as a hub for environmental activism."
@@ -26,7 +24,7 @@ const Floodplain = () => {
     <div>
       <Header transparent={false} activeItem="blog" />
       <div className="mt-16 w-full ">
-        <BlogHeader link="../blog/napirze" author="MAGGIE BRAND" minRead={7} />
+        {/* <BlogHeader link="../blog/napirze" author="MAGGIE BRAND" minRead={7} /> */}
         <BlogName name='HISTORY OF THE RUSTAVI FLOODPLAIN' />
         <BlogText text={text1} />
         <BlogImg img={img1} />
@@ -43,7 +41,7 @@ const Floodplain = () => {
         <BlogImg img={img6} />
         <BlogText text={text8} />
         <BlogText text={text9} />
-        <BlogFooter nextUrl='../blog/napirze' prevUrl="../blog/commoning" />
+        {/* <BlogFooter nextUrl='../blog/napirze' prevUrl="../blog/commoning" /> */}
       </div>
       <Footer activeItem="blog" />
     </div>

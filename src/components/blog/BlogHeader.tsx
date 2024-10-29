@@ -4,7 +4,7 @@ import arrowLeft from "../../assets/images/icons/Line arrow-left.png";
 import { Link } from "react-router-dom";
 
 type Props = {
-  link: string;
+  link: number;
   author: string;
   minRead: number;
 };
@@ -17,7 +17,7 @@ const BlogHeader = (props: Props) => {
         <img src={time} alt="" />
         <p>{props.minRead} Min read</p>
       </div>
-      <Link to={props.link}>
+      <Link to={`/blog/${props.link}`}>
         <div className="absolute top-4 left-0 lg:left-20 font-smooch-bold flex gap-0 lg:gap-2 text-xs items-center"><img src={arrowLeft} alt="" />Previous blog</div>
       </Link>
     </div>
