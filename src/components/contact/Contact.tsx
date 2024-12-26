@@ -32,7 +32,7 @@ const Contact = () => {
           <div className="font-smooch-bold">
             <p>Find us on socials:</p>
             <div className="flex gap-4 items-center">
-              <div className="text-md">Folow us:</div>
+              <div className="text-md">Follow us:</div>
               <div
                 className="cursor-pointer"
                 onClick={() =>

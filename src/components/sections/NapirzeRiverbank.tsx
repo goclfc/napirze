@@ -32,7 +32,7 @@ const NapirzeRiverbank = () => {
         </p>
       </div>
       <div className="flex w-full justify-center my-4">
-        <Link to="blog/napirze">
+        <Link to="blog/2">
           <button className="font-smooch-bold text-white bg-napirzeDark rounded-md drop-shadow-md px-3 py-1">
             Continue reading
           </button>

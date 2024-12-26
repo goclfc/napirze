@@ -14,7 +14,7 @@ const Footer = (props: Props) => {
           <img src={vericalLogo} alt="" className="w-full h-auto" />
         </div>
         <div className="flex gap-2">
-          <div className="text-xs">Folow us:</div>
+          <div className="text-xs">Follow us:</div>
           <div
             className="cursor-pointer"
             onClick={() =>

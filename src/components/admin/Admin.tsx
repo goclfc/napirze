@@ -67,7 +67,7 @@ const Admin = () => {
               {component.images.length > 0 &&
                 component.images.map((image) => <BlogImg img={image.name} />)}
             </>
-          )):<div className="w-full flex text-center text-3xl h-[550px]">Comming soon</div>}
+          )):<div className="w-full flex text-center text-3xl h-[550px]">Coming soon</div>}
         <BlogFooter
           nextUrl={parseFloat(id!) + 1}
           prevUrl={parseFloat(id!) - 1}
