@@ -23,9 +23,8 @@ const Blog = () => {
   return (
     <div>
       <Header transparent={false} activeItem="blog" />
-      <div className="mt-16 w-full flex p-0 lg:p-2 flex-wrap">
+      <div className="mt-16 w-full flex p-0 lg:p-2 flex-wrap ">
         {blogs?.length > 0 && blogs?.map(blog => (
-
         <div className="w-full md:w-1/2 p-0 lg:p-2">
           <BlogItem img={blog.image.name} description={blog.main_title} link={blog.id.toString()} />
         </div>
